@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/9/5
+ */-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/fa_angle_double_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="@string/fa_angle_double_right"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/comment_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/head_image_view"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/head_image_view"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:text="1#" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dashed_line_shape"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/head_image_view"
+        android:text="    如果你无法简洁的表达你的想法，那只说明你还不够了解它。  -- 阿尔伯特·爱因斯坦"
+        android:textColor="#101010" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:id="@+id/head_image_view"-->
+    <!--android:src="@mipmap/head"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/head_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        fresco:placeholderImage="@mipmap/head"
+        />
+
+    <TextView
+        android:id="@+id/comment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:text="2016-8-31 16:32" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/head_image_view"
+        android:text="姓名（用户名）" />
+
+</RelativeLayout>
+</LinearLayout>

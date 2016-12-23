@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LeiYuanYuan
+ * Time:2016/9/8
+ */-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/aboutme_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/aboutme_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/aboutme_head_image_view"
+                android:text="    如果你无法简洁的表达你的想法，那只说明你还不够了解它。  -- 阿尔伯特·爱因斯坦"
+                android:textColor="#101010" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/aboutme_head_image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                fresco:placeholderImage="@drawable/head" />
+
+            <TextView
+                android:id="@+id/aboutme_comment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/aboutme_comment_content"
+                android:text="2016-8-31 16:32" />
+
+            <TextView
+                android:id="@+id/aboutme_statement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/aboutme_head_image_view"
+                android:maxLines="3"
+                android:text="姓名在" />
+
+            <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="10dip"-->
+            <!--android:layout_marginBottom="0dp"-->
+            <!--android:layout_alignParentStart="false"-->
+            <!--android:id="@+id/view"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@drawable/dashed_line_shape"-->
+            <!--android:layout_below="@+id/aboutme_comment_date" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="回复"-->
+            <!--android:id="@+id/aboutme_reply"-->
+            <!--android:layout_below="@+id/view"-->
+            <!--android:gravity="center_vertical|center_horizontal"-->
+            <!--android:paddingTop="7dp"-->
+            <!--android:paddingBottom="7dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentBottom="false" />-->
+
+            <TextView
+                android:id="@+id/aboutme_projname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#66ccff"
+                android:layout_toEndOf="@+id/aboutme_statement"
+                android:text="项目名很长很长很长" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/aboutme_statement"
+                android:layout_below="@+id/aboutme_statement"
+                android:text="中发表评论" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

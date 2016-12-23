@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--add by lyy 2016.8.31-->
+<!--虚线的实现-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+    <stroke
+        android:width="3px"
+        android:color="#bbbbbb"
+        android:dashWidth="10px"
+        android:dashGap="10px" />
+</shape>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/8/27
+ */-->
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:paddingLeft="120dp"
+        android:id="@+id/fragment1title"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:id="@+id/main_top_vote"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人项目浏览"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_weight="0.50" />
+
+        <ImageButton
+            android:id="@+id/main_top_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@null"
+            android:paddingLeft="60dp"
+            android:src="@drawable/text_search"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment1title" />
+</RelativeLayout >

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/9/1
+ */-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+   >
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false" >
+        <!--卡片item布局格式-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardviewitem_header">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+             <!--   <ImageView
+                   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star"/> -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#336699"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/fa_star"
+                    android:id="@+id/fa_star"/>
+                <TextView
+                    android:id="@+id/cardviewitem_title"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:textColor="#336699"
+                    android:layout_marginStart="10dp"
+                    android:text="Aodobe illustrator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/cardviewitem_kongge1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="1"
+                    android:background="#ffffff"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:text="label"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/cardviewitem_label1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="1"
+                    android:background="@drawable/label_shape"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:text="label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/cardviewitem_kongge"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="1"
+                    android:background="#ffffff"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:text="label"
+                    android:layout_width="9dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/cardviewitem_label2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="1"
+                    android:background="@drawable/label_shape"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:text="label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            </HorizontalScrollView>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#bbbbbb"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/cardviewitem_desc"
+                android:maxLines="5"
+                android:layout_below="@+id/cardviewitem_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adobe illustrator是一种应用于出版、多媒体和在线图像的工业标准矢量插画的软件，作为一款非常好的图片处理工具，Adobe Illustrator广泛应用于印刷出版、海报书籍排版、专业插..."
+                android:layout_marginLeft="15dp"
+                android:textColor="#666666"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardviewitem_desc"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/cardviewitem_kongge5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="1"
+                    android:background="#ffffff"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:text="label"
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content" />
+              <!---  <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person"/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_user"
+                    android:id="@+id/fa_user"/>
+                <TextView
+                    android:id="@+id/cardviewitem_kongge4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="1"
+                    android:background="#ffffff"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:text="label"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/text_writer"
+                    android:background="#00000000"
+                    android:textColor="#c2c2c2"
+                    android:text="作者"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/cardviewitem_kongge3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="1"
+                    android:background="#ffffff"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:text="label"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/text_date"
+                    android:background="#00000000"
+                    android:textColor="#c2c2c2"
+                    android:text="2016-8-22"
+                    android:gravity="end"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

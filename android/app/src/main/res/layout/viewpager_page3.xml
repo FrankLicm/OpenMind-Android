@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/9/11
+ */-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <me.relex.photodraweeview.PhotoDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageview3"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入OpenMind-->"
+        android:textAlignment="center"
+        android:textColor="#66ccff"
+        android:id="@+id/jingruapp"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal|bottom" />
+</FrameLayout>

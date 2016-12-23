@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/8/27
+ */-->
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:paddingLeft="80dp"
+        android:id="@+id/fragment1title">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:id="@+id/main_top_all"
+                android:checked="true"
+                android:layout_width="71dp"
+                android:layout_height="30dp"
+                android:text="全部"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/tittle_left_button"
+                />
+            <TextView
+                android:layout_marginRight="15dp"
+                android:id="@+id/main_top_vote"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_width="71dp"
+                android:layout_height="30dp"
+                android:text="投票中"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/tittle_right_button"
+                />
+
+        <ImageButton
+            android:id="@+id/main_top_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@null"
+            android:paddingLeft="60dp"
+            android:src="@drawable/text_search"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment1title" />
+</RelativeLayout >

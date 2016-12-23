@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+<script language="JavaScript">
+function callJS(arg){
+document.getElementById('replaceme').innerHTML=arg;
+} //Android会来调用它
+</script>
+</head>
+<body>
+<h1>WebView</h1>
+<p>
+<a href="#"  onclick="window.alert('AlertfromJavaScript')">DisplayJavaScriptalert</a>//该事件会被android截获
+</p>
+<p>
+<a href="#" onclick="window.android.callAndroid('HellofromBrowser')">CallAndroidfromJavaScript</a>
+    //js通过自己定义“android"接口来调用java类中的方法，"android"可以改成任意的，但必须和java中设置的接口名一致
+</p>
+<p id="replaceme">
+</p>
+</body>
+</html>

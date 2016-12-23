@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/9/11
+ */-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+   <me.relex.photodraweeview.PhotoDraweeView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/button"
+       android:id="@+id/imageview1"
+       />
+</RelativeLayout>

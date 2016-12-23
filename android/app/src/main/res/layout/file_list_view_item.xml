@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/9/6
+ */-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fa_folder_o"
+        android:id="@+id/tubiao"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="...kjhgjbhbkjm"
+        android:id="@+id/filename"
+        android:layout_toEndOf="@+id/tubiao"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/filedate"
+        android:textSize="20sp"
+        android:text="2016-8-22"
+        android:layout_gravity="right" />
+
+</RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentStart="false"
+        android:id="@+id/view"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

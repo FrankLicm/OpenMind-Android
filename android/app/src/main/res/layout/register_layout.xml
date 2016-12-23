@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/8/29
+ */-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="165dp"
+        android:id="@+id/title1"
+        android:background="#000000"
+        >
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>-->
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="false"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+        <!--卡片item布局格式-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:text="注册新用户"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="用户名"
+                android:layout_marginTop="31dp"
+                android:textColor="#000000"
+                android:background="@drawable/edit_text_shape"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:id="@+id/editText"
+                android:layout_below="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignEnd="@+id/textView" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_error"
+                android:text="用户名格式不正确,请输入3-15位英文字母或数字"
+                android:textColor="#f44336"
+                android:layout_below="@+id/editText"
+                android:layout_alignStart="@+id/editText"/>
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="密码"
+                android:id="@+id/editText2"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_text_shape"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/editText"
+                android:layout_alignStart="@+id/editText"
+                android:layout_marginTop="35dp"
+                android:layout_alignEnd="@+id/editText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_error"
+                android:text="密码格式不正确,请输入6-16位英文字母或数字"
+                android:textColor="#f44336"
+                android:layout_below="@+id/editText2"
+                android:layout_alignStart="@+id/editText2"/>
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="确认密码"
+                android:id="@+id/editText3"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_text_shape"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/editText2"
+                android:layout_alignStart="@+id/editText2"
+                android:layout_marginTop="35dp"
+                android:layout_alignEnd="@+id/editText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/retry_password_error"
+                android:text="两次密码不一致"
+                android:textColor="#f44336"
+                android:layout_below="@+id/editText3"
+                android:layout_alignStart="@+id/editText3"/>
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="真实姓名"
+                android:id="@+id/editText4"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:background="@drawable/edit_text_shape"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/editText3"
+                android:layout_alignStart="@+id/editText3"
+                android:layout_marginTop="35dp"
+                android:layout_alignEnd="@+id/editText" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText4"
+                android:layout_below="@+id/editText4"
+                android:layout_alignEnd="@+id/editText4"
+                android:layout_marginTop="20dp"
+                android:id="@+id/spinner"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_button"
+                android:text="注册"
+                android:layout_below="@+id/spinner"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">openmind</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_label_search">Search</string>
+    <string name="department_prompt">院系选择</string>
+    <string name="back_to_project_detail">&lt;&lt;返回项目详情</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

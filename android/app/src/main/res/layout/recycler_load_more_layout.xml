@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/9/6
+ */-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBar"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--/>-->
+        <me.relex.photodraweeview.PhotoDraweeView
+            android:id="@+id/progressBar"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="300"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="1000"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:retryImageScaleType="centerCrop"
+            fresco:roundAsCircle="false"
+            fresco:roundBottomLeft="false"
+            android:background="#fafafa"
+            fresco:roundBottomRight="true"
+            fresco:actualImageUri="@drawable/loading"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="false"
+            fresco:roundedCornerRadius="1dp" />
+        <TextView
+            android:id="@+id/foot_view_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

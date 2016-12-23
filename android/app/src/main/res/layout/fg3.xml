@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/**
+ * Created and Modified by:LiChangMao
+ * Time:2016/8/27
+ */-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:paddingLeft="165dp"
+      >
+     <!--   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="设置"
+            android:textSize="18dp"
+            android:textColor="#ffffff"/>-->
+    </LinearLayout>
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title1"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
+        android:clickable="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="false" >
+        <!--卡片item布局格式-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="#ffffff">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+               android:id="@+id/touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+               android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            fresco:placeholderImage="@drawable/head" />
+           <TextView
+               android:id="@+id/login_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/touxiang"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:clickable="true"
+               android:text="登 陆"
+               android:textColor="#444444"
+               android:textSize="20sp" />
+           <TextView
+               android:id="@+id/username"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/login_name"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:text="用户名"
+               android:textColor="#444444"
+               android:textSize="20sp" />
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="院系"
+            android:textColor="#444444"
+            android:textSize="20sp" />
+        <View
+            android:id="@+id/xuxian1"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/department"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/dashed_line_shape"
+            android:layerType="software" />
+          <LinearLayout
+              android:id="@+id/huoyuejilu"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/xuxian1"
+              android:clickable="true"
+              android:orientation="horizontal"
+              android:weightSum="1">
+              <TextView
+                  android:id="@+id/fa_signal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginTop="0dp"
+                  android:text="@string/fa_signal"
+                  android:textColor="#000000"
+                  android:textSize="20sp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight="1.08"
+                  android:text="活跃记录"
+                  android:textColor="#444444"
+                  android:textSize="20sp" />
+          </LinearLayout>
+        <View
+            android:id="@+id/xuxian2"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/huoyuejilu"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_shape"
+            android:layerType="software" />
+        <LinearLayout
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuxian2"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/fa_cog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/fa_cog"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1.08"
+                android:text="设置"
+                android:textColor="#444444"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/xuxian3"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/settings"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_shape"
+            android:layerType="software" />
+        <LinearLayout
+            android:id="@+id/yuwoxiangguan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuxian3"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/fa_commenting_o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/fa_commenting_o"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1.08"
+                android:text="与我相关"
+                android:textColor="#444444"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
